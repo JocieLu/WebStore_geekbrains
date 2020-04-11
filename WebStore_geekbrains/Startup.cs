@@ -41,9 +41,8 @@ namespace WebStore_geekbrains
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{Action=Index}/{ id ?}");
+                    pattern: "{controller=Home}/{Action=Index}/{id?}");
 
-                //endpoints.MapGet("/", async context => { await context.Response.WriteAsync(helloMsg); });
             });
         }
     }

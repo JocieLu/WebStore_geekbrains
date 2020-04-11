@@ -20,7 +20,8 @@ namespace WebStore_geekbrains.Controllers
                 FirstName = "Иван",
                 SurName = "Иванов",
                 Patronymic = "Иванович",
-                Age = 22
+                Age = 22,
+                Position = "Руководитель"
             },
             new EmployeeViewModel
             {
@@ -28,7 +29,8 @@ namespace WebStore_geekbrains.Controllers
                 FirstName = "Владислав",
                 SurName = "Петров",
                 Patronymic = "Иванович",
-                Age = 35
+                Age = 35,
+                Position = "Разработчик"
             }
         };
 
@@ -36,6 +38,11 @@ namespace WebStore_geekbrains.Controllers
         public IActionResult Index()
         {
             return View(_employees);
+        }
+
+        public IActionResult Details(int id)
+        {
+            return View(_employees.FirstOrDefault(x => x.Id == id));
         }
     }
 }
