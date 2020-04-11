@@ -12,27 +12,32 @@ namespace WebStore_geekbrains.Controllers
     public class HomeController : Controller
     {
 
-        List<EmployeeViewModel> _employees = new List<EmployeeViewModel> 
+        List<EmployeeViewModel> _employees;
+
+        public HomeController()
         {
-            new EmployeeViewModel
+            _employees = new List<EmployeeViewModel>
             {
-                Id = 1,
-                FirstName = "Иван",
-                SurName = "Иванов",
-                Patronymic = "Иванович",
-                Age = 22,
-                Position = "Руководитель"
-            },
-            new EmployeeViewModel
-            {
-                Id = 2,
-                FirstName = "Владислав",
-                SurName = "Петров",
-                Patronymic = "Иванович",
-                Age = 35,
-                Position = "Разработчик"
-            }
-        };
+                new EmployeeViewModel
+                {
+                    Id = 1,
+                    FirstName = "Иван",
+                    SurName = "Иванов",
+                    Patronymic = "Иванович",
+                    Age = 22,
+                    Position = "Начальник"
+                },
+                new EmployeeViewModel
+                {
+                    Id = 2,
+                    FirstName = "Владислав",
+                    SurName = "Петров",
+                    Patronymic = "Иванович",
+                    Age = 35,
+                    Position = "Программист"
+                }
+            };
+        }
 
         // GET: /<controller>/
         public IActionResult Index()
