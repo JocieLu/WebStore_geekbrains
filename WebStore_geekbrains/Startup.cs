@@ -31,6 +31,7 @@ namespace WebStore_geekbrains
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseStaticFiles();
             app.UseRouting();
 
             string helloMsg = _configuration["CustomHelloWorld"];
