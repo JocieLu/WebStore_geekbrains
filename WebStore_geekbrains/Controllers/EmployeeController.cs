@@ -9,12 +9,12 @@ using WebStore_geekbrains.Models;
 
 namespace WebStore_geekbrains.Controllers
 {
-    public class HomeController : Controller
+    public class EmployeeController : Controller
     {
 
         List<EmployeeViewModel> _employees;
 
-        public HomeController()
+        public EmployeeController()
         {
             _employees = new List<EmployeeViewModel>
             {
