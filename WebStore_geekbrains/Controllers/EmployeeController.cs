@@ -9,6 +9,7 @@ using WebStore_geekbrains.Models;
 
 namespace WebStore_geekbrains.Controllers
 {
+    [Route("users")]
     public class EmployeeController : Controller
     {
 
@@ -40,11 +41,13 @@ namespace WebStore_geekbrains.Controllers
         }
 
         // GET: /<controller>/
+        [Route("all")]
         public IActionResult Index()
         {
             return View(_employees);
         }
 
+        [Route("{id}")]
         public IActionResult Details(int id)
         {
             return View(_employees.FirstOrDefault(x => x.Id == id));
