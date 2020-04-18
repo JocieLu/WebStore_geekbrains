@@ -1,9 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using WebStore_geekbrains.Models;
+using WebStore_2020.Infrastructure.Interfaces;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -12,45 +11,24 @@ namespace WebStore_geekbrains.Controllers
     [Route("users")]
     public class EmployeeController : Controller
     {
+        private readonly IEmployeesService _employeesService;
 
-        List<EmployeeViewModel> _employees;
-
-        public EmployeeController()
+        public EmployeeController(IEmployeesService employeesService)
         {
-            _employees = new List<EmployeeViewModel>
-            {
-                new EmployeeViewModel
-                {
-                    Id = 1,
-                    FirstName = "Иван",
-                    SurName = "Иванов",
-                    Patronymic = "Иванович",
-                    Age = 22,
-                    Position = "Начальник"
-                },
-                new EmployeeViewModel
-                {
-                    Id = 2,
-                    FirstName = "Владислав",
-                    SurName = "Петров",
-                    Patronymic = "Иванович",
-                    Age = 35,
-                    Position = "Программист"
-                }
-            };
+            _employeesService = employeesService;
         }
 
         // GET: /<controller>/
         [Route("all")]
         public IActionResult Index()
         {
-            return View(_employees);
+            return View(_employeesService.GetAll());
         }
 
         [Route("{id}")]
         public IActionResult Details(int id)
         {
-            return View(_employees.FirstOrDefault(x => x.Id == id));
+            return View(_employeesService.GetById(id));
         }
     }
 }
