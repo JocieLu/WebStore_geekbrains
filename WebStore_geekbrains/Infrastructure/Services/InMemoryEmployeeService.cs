@@ -44,7 +44,7 @@ namespace WebStore_geekbrains.Infrastructure.Services
 
         public void Commit()
         {
-            throw new NotImplementedException();
+            
         }
 
         public void Delete(int id)
