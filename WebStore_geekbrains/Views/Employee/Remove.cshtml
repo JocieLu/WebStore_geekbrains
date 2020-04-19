@@ -1,0 +1,18 @@
+﻿@model EmployeeViewModel
+
+@{
+    ViewData["Title"] = $"Remove employe {Model.SurName} {Model.FirstName} {Model.Patronymic}";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@ViewData["Title"]</h2>
+<form asp-action="remove" method="post">
+    <div>
+        <text>Are you sure?</text>
+        <div class="form-group">
+            <input type="submit" value="yes" class="btn btn-default"/>
+            <input type="button" value="cancel" class="btn btn-default" onclick="location.href='@Url.Action("all","users")'"/>
+        </div>
+    </div>
+</form>
+

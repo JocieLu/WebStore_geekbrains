@@ -70,5 +70,28 @@ namespace WebStore_geekbrains.Controllers
 
             return RedirectToAction(nameof(Index));
         }
+
+        [Route("remove/{id}")]
+        [HttpGet]
+        public IActionResult Remove(int id)
+        {
+            EmployeeViewModel model = _employeesService.GetById(id);
+
+            if (model is null) return NotFound();
+
+            return View(model);
+        }
+
+        [Route("remove/{id}")]
+        [HttpPost]
+        public IActionResult Remove(EmployeeViewModel model)
+        {
+            if (model.Id == 0)
+                return NotFound();
+
+            _employeesService.Delete(model.Id);
+
+            return RedirectToAction(nameof(Index));
+        }
     }
 }
