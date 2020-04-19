@@ -17,7 +17,7 @@ namespace WebStore_geekbrains.Controllers
         {
             return View();
         }
-
+    
         public IActionResult NotFound()
         {
             return View();
