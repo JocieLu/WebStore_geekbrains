@@ -9,6 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using WebStore_2020.Infrastructure.Interfaces;
+using WebStore_geekbrains.Infrastructure.Interfaces;
 using WebStore_geekbrains.Infrastructure.Services;
 
 namespace WebStore_geekbrains
@@ -24,6 +25,8 @@ namespace WebStore_geekbrains
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+
+            services.AddSingleton<IProductService, InMemoryProductService>();
             services.AddSingleton<IEmployeesService, InMemoryEmployeeService>();
         }
 

@@ -8,4 +8,8 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\WebStore_geekbrains.Domain\WebStore_geekbrains.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
