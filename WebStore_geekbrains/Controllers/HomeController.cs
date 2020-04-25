@@ -47,14 +47,5 @@ namespace WebStore_geekbrains.Controllers
             return View();
         }
 
-        public IActionResult ProductDetails()
-        {
-            return View();
-        }
-
-        public IActionResult Shop()
-        {
-            return View();
-        }
     }
 }
