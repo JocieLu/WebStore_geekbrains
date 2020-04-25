@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using WebStore_geekbrains.Domain;
 using WebStore_geekbrains.Domain.Entities.Base;
 using WebStore_geekbrains.Infrastructure.Interfaces;
 
@@ -406,6 +407,16 @@ namespace WebStore_geekbrains.Infrastructure.Services
         public IEnumerable<Category> GetCategories()
         {
             return _categories;
+        }
+
+        public IEnumerable<Product> GetProducts(ProductFilter productFilter)
+        {
+            var products = _products;
+
+            if (productFilter.CategoryID.HasValue) products = products.Where(x => x.CategoryId == productFilter.CategoryID.Value).ToList();
+            if (productFilter.BrandID.HasValue) products = products.Where(x => x.BrandId == productFilter.BrandID.Value).ToList();
+
+            return products;
         }
     }
 }

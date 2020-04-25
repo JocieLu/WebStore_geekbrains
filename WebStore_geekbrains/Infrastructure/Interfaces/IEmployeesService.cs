@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using WebStore_geekbrains.Models;
 
-namespace WebStore_2020.Infrastructure.Interfaces
+namespace WebStore_geekbrains.Infrastructure.Interfaces
 {
     public interface IEmployeesService
     {

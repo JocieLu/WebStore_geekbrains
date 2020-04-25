@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using WebStore_2020.Infrastructure.Interfaces;
+using WebStore_geekbrains.Infrastructure.Interfaces;
 using WebStore_geekbrains.Models;
 
 namespace WebStore_geekbrains.Infrastructure.Services
