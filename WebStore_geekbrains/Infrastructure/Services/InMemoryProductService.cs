@@ -234,7 +234,7 @@ namespace WebStore_geekbrains.Infrastructure.Services
                 {
                     Id = 1,
                     Name = "Acne",
-                    Order = 0
+                    Order = 0,
                 },
                 new Brand()
                 {
