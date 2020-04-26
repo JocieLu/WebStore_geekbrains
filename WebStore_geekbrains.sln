@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebStore_geekbrains", "WebS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebStore_geekbrains.Domain", "WebStore_geekbrains.Domain\WebStore_geekbrains.Domain.csproj", "{3783D646-13B4-4150-BEF1-56BBB8EC8CF1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebStore_geekbrains.DomainNew", "DomainNew\WebStore_geekbrains.DomainNew.csproj", "{A5E05F4F-2AA8-4149-A8B8-6F634B0DDC84}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{3783D646-13B4-4150-BEF1-56BBB8EC8CF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3783D646-13B4-4150-BEF1-56BBB8EC8CF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3783D646-13B4-4150-BEF1-56BBB8EC8CF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5E05F4F-2AA8-4149-A8B8-6F634B0DDC84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5E05F4F-2AA8-4149-A8B8-6F634B0DDC84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5E05F4F-2AA8-4149-A8B8-6F634B0DDC84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5E05F4F-2AA8-4149-A8B8-6F634B0DDC84}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
