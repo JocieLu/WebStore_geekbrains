@@ -9,7 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\WebStore_geekbrains.Domain\WebStore_geekbrains.Domain.csproj" />
+    <ProjectReference Include="..\DomainNew\WebStore_geekbrains.DomainNew.csproj" />
   </ItemGroup>
 
 </Project>
