@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29920.165
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebStore_geekbrains", "WebStore_geekbrains\WebStore_geekbrains.csproj", "{D4D3A421-DA82-4D21-A109-103ADA11FAE6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebStore_geekbrains.DomainNew", "DomainNew\WebStore_geekbrains.DomainNew.csproj", "{A5E05F4F-2AA8-4149-A8B8-6F634B0DDC84}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebStore_geekbrains.Domain", "DomainNew\WebStore_geekbrains.Domain.csproj", "{A5E05F4F-2AA8-4149-A8B8-6F634B0DDC84}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
