@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DomainNew\WebStore_geekbrains.Domain.csproj" />
+    <ProjectReference Include="..\WebStore_geekbrains.DAL\WebStore_geekbrains.DAL.csproj" />
   </ItemGroup>
 
 </Project>
