@@ -30,7 +30,7 @@ namespace WebStore_geekbrains
             services.AddDbContext<WebStoreContext>(options => options
                 .UseSqlServer(_configuration.GetConnectionString("DefaultConnection")));
 
-            services.AddSingleton<IProductService, InMemoryProductService>();
+            services.AddScoped<IProductService, SqlProductService>();
             services.AddSingleton<IEmployeesService, InMemoryEmployeeService>();
         }
 
