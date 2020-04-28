@@ -12,6 +12,7 @@ namespace WebStore_geekbrains.Domain.Entities.Base
         public int Order { get; set; }
         public int CategoryId { get; set; }
         public int? BrandId { get; set; }
+        public int Size { get; set; }
         public string ImageUrl { get; set; }
         public decimal Price { get; set; }
 
